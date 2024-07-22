@@ -12,7 +12,7 @@ public class Employee {
     private String name;
     private String salary;
 
-    @OneToMany(fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "employee", fetch = FetchType.LAZY)
     private Courses courses;
 
     public Courses getCourses() {
